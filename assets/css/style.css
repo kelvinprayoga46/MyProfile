@@ -569,7 +569,7 @@ section {
   display: block;
   font-weight: 600;
   font-family: "Poppins", sans-serif;
-  color: #2c4964;
+  color: #002fff;
 }
 
 .skills .progress .skill .val {
@@ -585,7 +585,7 @@ section {
   width: 1px;
   height: 10px;
   transition: 0.9s;
-  background-color: #dd5a92;
+  background-color: #0051ff;
 }
 
 /*--------------------------------------------------------------

@@ -341,12 +341,16 @@
           </div>
 
           <div class="col-lg-5 col-md-8">
-            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+            <div class="alert alert-success alert-dismissible fade show d-none my-alert" role="alert">
+              <strong>Terima Kasih!</strong> Saran anda sudah saya terima, Sampai Jumpa.
+              <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+            </div>
+            <form name="wpu-contact-form">
               <div class="form-group">
-                <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+                <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" name="nama">
               </div>
               <div class="form-group mt-3">
-                <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+                <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required name="email">
               </div>
               <div class="form-group mt-3">
                 <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
@@ -354,12 +358,11 @@
               <div class="form-group mt-3">
                 <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
               </div>
-              <div class="my-3">
-                <div class="loading">Loading</div>
-                <div class="error-message"></div>
-                <div class="sent-message">Your message has been sent. Thank you!</div>
-              </div>
-              <div class="text-center"><button type="submit">Send Message</button></div>
+              <div class="text-center"><button type="submit" class="btn btn-danger btn-kirim">Send Message</button></div>
+              <button class="btn btn-danger btn-loading d-none" type="button" disabled>
+                <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+                Loading...
+              </button>
             </form>
           </div>
 
@@ -399,6 +402,29 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+
+  <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbzEArcPqoGdWMdqDEuoDf6zrVWmqfPfOsAqKhviCvGAo5RNyYA44jINQUK0P_xgwO4USg/exec'
+    const form = document.forms['wpu-contact-form']
+    const btnKirim = document.querySelector('.btn-kirim');
+    const btnLoading = document.querySelector('.btn-loading');
+    const myAlert = document.querySelector('.my-alert');
+
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      btnLoading.classList.toggle('d-none');
+      btnKirim.classList.toggle('d-none');
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+          btnLoading.classList.toggle('d-none');
+          btnKirim.classList.toggle('d-none');
+          myAlert.classList.toggle('d-none');
+          form.reset();
+          console.log('Success!', response)
+        })
+        .catch(error => console.error('Error!', error.message));
+    });
+  </script>
 
   <!-- Favicons -->
   <link href="assets/img/favicon.png" rel="icon">

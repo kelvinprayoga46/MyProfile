@@ -9,6 +9,9 @@
   <meta content="" name="description">
   <meta content="" name="keywords">
 
+  <!-- AOS -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
   <!-- Favicons -->
   <link href="assets/img/favicon.png" rel="icon">
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
@@ -39,16 +42,15 @@
   <!-- ======= Hero Section ======= -->
   <section id="hero" class="d-flex flex-column align-items-center justify-content-center">
     <h1>Hi, I'm Kelvin!</h1>
-    <h2>I am Network Engineer</h2>
+    <h2>I'm Network Engineer</h2>
     <a href="#about" class="btn-get-started scrollto"><i class="bi bi-chevron-double-down"></i></a>
   </section><!-- End Hero -->
 
   <!-- ======= Header ======= -->
   <header id="header" class="d-flex align-items-center">
     <div class="container d-flex align-items-center justify-content-between">
-
-      <div class="logo">
-        <h1><a href="index.html">My Profile</a></h1>
+      <div class="logo" data-aos="fade-right">
+        <h1>My Profile</div></a></h1>
         <!-- Uncomment below if you prefer to use an image logo -->
         <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
       </div>
@@ -80,9 +82,10 @@
       <div class="container">
 
         <div class="row no-gutters">
-          <div class="image col-xl-5 d-flex align-items-stretch justify-content-center justify-content-lg-start"></div>
+          <div class="image col-xl-5 d-flex align-items-stretch justify-content-center justify-content-lg-start" 
+           data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="1000">"></div>
           <div class="col-xl-7 ps-0 ps-lg-5 pe-lg-1 d-flex align-items-stretch">
-            <div class="content d-flex flex-column justify-content-center">
+            <div class="content d-flex flex-column justify-content-center" data-aos="zoom-in" data-aos-offset="500">
               <h3>My Profile</h3>
               <p>
                 Hi Teman-Teman, Perkenalan Nama Saya M.Kelvin Prayoga, dari Jurusan Informatika Program Studi Rekayasa Keamanan Siber. Saya tinggal di Batam, Kepulauan Riau, Indonesia. Saat ini saya menempuh pendidikan di Kampus Politeknik Negeri Batam.
@@ -107,7 +110,7 @@
 
         <div class="row skills-content">
 
-          <div class="col-lg-6">
+          <div class="col-lg-6" data-aos="zoom-in" data-aos-delay="100">
 
             <div class="progress">
               <span class="skill">Adobe Illustrator <i class="val">80%</i></span>
@@ -132,7 +135,7 @@
 
           </div>
 
-          <div class="col-lg-6">
+          <div class="col-lg-6" data-aos="zoom-in" data-aos-delay="300">
 
             <div class="progress">
               <span class="skill">Network Design <i class="val">80%</i></span>
@@ -165,9 +168,9 @@
         <div class="section-title">
           <h2>Resume</h2>
 
-        <div class="row">
-          <div class="col-lg-6">
-            <h3 class="resume-title">Summary</h3>
+        <div class="row ">
+          <div class="col-lg-6" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="100">
+            <h3 class="resume-title">Summary </h3>
             <div class="resume-item pb-0">
               <h4>M.Kelvin Prayoga</h4>
               <p><em>Saya adalah seorang Insinyur jaringan yang berpengetahuan dan memiliki kemauan untuk mempelajari hal-hal yang baru. Saya memiliki keterampilan dalam memasang, mengconfigurasi, dan memelihara jaringan. Berkomitmen untuk melakukan pekerjaan berkualitas tinggi, serta memiliki kemampuan kerjasama tim dan manajemen waktu yang baik.
@@ -180,7 +183,8 @@
               </ul>
               </p>
             </div>
-
+          </div>
+          <div class="col-lg-8" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="300">
             <h3 class="resume-title">Education</h3>
             <div class="resume-item">
               <h4>SD Negeri 002 Batu Ampar</h4>
@@ -198,7 +202,7 @@
               <p>Menjalani Pendidikan Sekolah Menengah Kejuruan selam 3 tahun, aktif mengikuti organisasi Kepemimpinan (PASKIBRA) dan belajar mengenai Administrasi dan Infrastruktur Jaringan</p>
             </div>
           </div>
-          <div class="col-lg-6">
+          <div class="col-lg-6" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="500">
             <h3 class="resume-title">Experience</h3>
             <div class="resume-item">
               <h4>NOC Support at PT. Graha Telekomunikasi Indonesia</h4>
@@ -238,58 +242,50 @@
 
         <div class="row portfolio-container">
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-Logo">
+          <div class="col-lg-4 col-md-6 portfolio-item filter-Logo" data-aos="zoom-in" data-aos-duration="1000">
             <div class="portfolio-wrap">
               <img src="assets/img/portfolio/Logo Brand M Media hitam.png" class="img-fluid" alt="">
               <div class="portfolio-info">
                 <h4>Logo Brand M Media Hitam</h4>
-                <p>Logo</p>
               </div>
               <div class="portfolio-links">
                 <a href="assets/img/portfolio/Logo Brand M Media hitam.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Logo"><i class="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
               </div>
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-Logo">
+          <div class="col-lg-4 col-md-6 portfolio-item filter-Logo" data-aos="zoom-in" data-aos-duration="1000">
             <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/Logo Brand Polosan.png" class="img-fluid" alt="">
+              <img src="assets/img/portfolio/Logo Brand Polosan-01.png" class="img-fluid" alt="">
               <div class="portfolio-info">
                 <h4>Logo Brand Polosan</h4>
-                <p>Logo</p>
               </div>
               <div class="portfolio-links">
-                <a href="assets/img/portfolio/Logo Brand Polosan.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Logo"><i class="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+                <a href="assets/img/portfolio/Logo Brand Polosan-01.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Logo"><i class="bx bx-plus"></i></a>
               </div>
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-Logo">
+          <div class="col-lg-4 col-md-6 portfolio-item filter-Logo" data-aos="zoom-in" data-aos-duration="1000">
             <div class="portfolio-wrap">
               <img src="assets/img/portfolio/Logo PT - Logo + Nama-01.png" class="img-fluid" alt="">
               <div class="portfolio-info">
                 <h4>Logo PT Mulia Batam Net</h4>
-                <p>Logo</p>
               </div>
               <div class="portfolio-links">
                 <a href="assets/img/portfolio/Logo PT - Logo + Nama-01.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Logo"><i class="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
               </div>
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web" data-aos="zoom-in" data-aos-duration="1000">
             <div class="portfolio-wrap">
               <img src="assets/img/portfolio/layanan web M media .png" class="img-fluid" alt="">
               <div class="portfolio-info">
                 <h4>Layanan Web M Media</h4>
-                <p>Card</p>
               </div>
               <div class="portfolio-links">
                 <a href="assets/img/portfolio/layanan web M media .png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web"><i class="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
               </div>
             </div>
           </div>
@@ -299,11 +295,9 @@
               <img src="assets/img/portfolio/CV KELVIN.png" class="img-fluid" alt="">
               <div class="portfolio-info">
                 <h4>Curiculum Vitae</h4>
-                <p>CV</p>
               </div>
               <div class="portfolio-links">
-                <a href="assets/img/portfolio/CV KELVIN.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="CV"><i class="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>      
+                <a href="assets/img/portfolio/CV KELVIN.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="CV"><i class="bx bx-plus"></i></a>      
               </div>
             </div>
           </div>
@@ -399,6 +393,12 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+
+  <script>
+    AOS.init();
+  </script>
 
   <script>
     const scriptURL = 'https://script.google.com/macros/s/AKfycbzEArcPqoGdWMdqDEuoDf6zrVWmqfPfOsAqKhviCvGAo5RNyYA44jINQUK0P_xgwO4USg/exec'
